@@ -71,14 +71,12 @@ export const Skill_data = [
     {
       name: "Github",
       src: "/github.svg",
+      link: "https://github.com/silvvh",
     },
     {
       name: "Linkedin",
       src: "/linkedin.svg",
-    },
-    {
-      name: "Discord",
-      src: "/discord.svg",
+      link: "https://www.linkedin.com/in/victor-hugo-brito-silva-71b564207/",
     },
   ];
   

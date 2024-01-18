@@ -75,18 +75,15 @@ const Navbar: React.FC = () => {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            {Socials.map((social) => (
-              <li key={social.name}>
-                <Image
-                  src={social.src}
-                  alt={social.name}
-                  width={24}
-                  height={24}
-                />
-              </li>
-            ))}
-          </ul>
+    <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+      {Socials.map((social) => (
+        <li key={social.name}>
+          <a href={social.link} target="_blank" rel="noopener noreferrer">
+            <Image src={social.src} alt={social.name} width={24} height={24} />
+          </a>
+        </li>
+      ))}
+    </ul>
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}

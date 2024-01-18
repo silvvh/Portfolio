@@ -13,35 +13,29 @@ const Projects = () => {
       </h1>
       <ul className="grid md:grid-cols-3 gap-5 md:gap-12">   
       <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-            <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-              <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+          imgUrl="/hms.jpg"
+          title="Hospital Appointment Booking"
+          gitUrl=""
+          previewUrl=""
+          description="Plataforma de agendamento de consultas médicas com sistema de autenticação específico para paciente, doutor e administrador. A API foi construída no framework Springboot." />
+ <ProjectCard
+          imgUrl="/ecomerce.jpg"
+          title="E-Commerce Project"
+          gitUrl=""
+          previewUrl=""
+          description="E-commerce construído em Node/Express. Possui produtos de diferentes categorias, a autenticação e funcionalidades do sistema seguem a lógica de experiência desejada para os papéis de usuário, funcionário e admin."/>
+ <ProjectCard
+          imgUrl="/agency.jpg"
+          title="Agency Landing Page"
+          gitUrl=""
+          previewUrl=""
+          description="Landing page responsiva construída sob o uso de SASS, linguagem pré-processadora de CSS." />
+      <ProjectCard
+          imgUrl="/todo.jpg"
+          title="ToDo List"
+          gitUrl=""
+          previewUrl=""
+          description="Aplicativo de gerenciamento de lista de tarefas constrúido com React que utiliza o Firebase para persistência de dados." />
       </ul>
     </div>
   );

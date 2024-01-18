@@ -11,16 +11,16 @@ interface TabData {
 
 const TAB_DATA: TabData[] = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Interests",
+    id: "interests",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Desenvolvimento Web</li>
+        <li>Desenvolvimento Mobile</li>
+        <li>Ciência de Dados</li>
+        <li>Engenharia de Software</li>
+        <li>Inteligência Artificial</li>
+        <li>Aprendizagem de Máquina</li>
       </ul>
     ),
   },
@@ -29,25 +29,15 @@ const TAB_DATA: TabData[] = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Ciência da Computação - UTFPR</li>
+        <li>Análise & Desenvolvimento de Sistemas - Unicesumar</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection: FC = () => {
-  const [tab, setTab] = useState<string>("skills");
+  const [tab, setTab] = useState<string>("interests");
 
   const handleTabChange = (id: string) => {
     setTab(id);
@@ -65,24 +55,18 @@ const AboutSection: FC = () => {
           </p>
           <div className="flex flex-row justify-start mt-8 ">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("interests")}
+              active={tab === "interests"}
             >
               {" "}
-              Interests{" "}
+              Interesses{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              Soft Skills
+              Educação{" "}
             </TabButton>
           </div>
           <div className="mt-8">
