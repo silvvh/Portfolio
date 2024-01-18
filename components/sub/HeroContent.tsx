@@ -46,7 +46,7 @@ const HeroContent = () => {
           </h1>
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-white my-2 max-w-[600px]"
+          className="text-base sm:text-lg text-white my-2 max-w-[600px]"
         >
           Olá, sou um programador altamente focado e apaixonado por transformar ideias em realidade digital. Prezo pela segurança e escalabilidade das aplicações a partir das tecnologias em alta no mercado.
         </motion.p>
