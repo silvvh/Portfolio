@@ -13,11 +13,11 @@ const Projects = () => {
       </h1>
       <ul className="grid md:grid-cols-3 gap-5 md:gap-12">   
       <ProjectCard
-          imgUrl="/hms.jpg"
-          title="Hospital Appointment Booking"
-          gitUrl=""
-          previewUrl=""
-          description="Plataforma de agendamento de consultas médicas com sistema de autenticação específico para paciente, doutor e administrador. A API foi construída no framework Springboot." />
+          imgUrl="/hms.png"
+          title="Hospital Appointment Scheduling"
+          gitUrl="https://github.com/silvvh/Hospital-Appointment-Scheduling"
+          previewUrl="https://hospital-appointment-scheduling.vercel.app"
+          description="Plataforma de agendamento de consultas médicas com sistema de autenticação específico para paciente, doutor e administrador. Os frameworks escolhidos foram Next.ts e Springboot." />
  <ProjectCard
           imgUrl="/ecomerce.jpg"
           title="E-Commerce Project"
