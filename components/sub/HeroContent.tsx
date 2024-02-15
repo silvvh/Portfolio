@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
+import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroContent = () => {
+  const downloadCV = () => {
+    window.open('/victor-brito.pdf', '_blank');
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -29,33 +29,34 @@ const HeroContent = () => {
         </motion.div>
 
   
-          <h1 className="my-4 text-4xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-2">
-            <TypeAnimation
-              sequence={[
-                "Fullstack Developer",
-                1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h1>
+        <h1 className="my-4 text-4xl sm:text-4xl lg:text-5xl lg:leading-normal font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-2">
+          <TypeAnimation
+            sequence={[
+              "Fullstack Developer",
+              1000,
+              "Mobile Developer",
+              1000,
+              "UI/UX Designer",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
+        </h1>
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-base sm:text-lg text-white my-2 max-w-[600px]"
         >
           Olá, sou um programador altamente focado e apaixonado por transformar ideias em realidade digital. Prezo pela segurança e escalabilidade das aplicações a partir das tecnologias em alta no mercado.
         </motion.p>
-        <motion.a
+        <motion.button
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          onClick={downloadCV}
         >
           Download CV
-        </motion.a>
+        </motion.button>
       </div>
 
       <motion.div
